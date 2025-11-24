@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/docs.css" rel="stylesheet">
+    <title>kishino's portfolio</title>
+
+    <style>
+        html,
+        body {
+            overflow-y: auto;
+        }
+
+        .black-background {
+            background-color: black;
+            color: white;
+            padding: 60px 20px;
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+
+<body class="p-3 mb2 bg-dark-subtle text-dark">
+
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-transparent bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- <button class="btn btn-dark text-white position-fixed top-0 end-0" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+        data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="閉じるe"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#works" onclick="closeOffcanvas()">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- hrefで位置をしていしてonclick="closeoffcanva"でoffcanvasを閉じる -->
+                            <a class="nav-link" href="index.html#about" onclick="closeOffcanvas()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" onclick="closeOffcanvas()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="row g-2 align-items-center justify-content-end" role="search">
+                <div class="col-auto">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-outline-white" type="submit">Search</button>
+                </div>
+            </form> -->
+        </div>
+    </div>
+
+
+    <div id="canvas-parent" class="text-start">
+        <div class="overray px-4 py-5">
+            <!-- text-decoration: none;は下の線を表示しないようにする color: inherit;は文字色をbodyとかの背景に合わせる -->
+            <h1 class="display-1"><a href="index.html#works" style="text-decoration: none; color: inherit;">Works</a>
+            </h1>
+        </div>
+    </div>
+
+    <div id="about" class="container-fluid mt-6">
+        <div class="row">
+            <div class="col-12-md-6">
+                <h1 class="text-top">ShopBotを用いた作品</h1>
+
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 3"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/isu_4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/isu_5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/isu_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/isu_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/isu_3.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <dl class="text-mid">
+                    <div class="row">
+                        <dt class="col-4">使用技術</dt>
+                        <dd class="col-8">ShopBot</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">制作年月</dt>
+                        <dd class="col-8">2023年10月頃</dd>
+                    </div>
+                    <p class="text mt-4">この作品は情報学部、デザイン学部、人文学部福祉実践学科、建築学部の学部横断で行われたワークショップのときにチームで作成した
+                        作品です。私のチームは情報学部1人、デザイン学部1人、人文学部福祉実践学科1人、建築学部3人のチームでした。
+
+                    </p>
+                    <dt class="col-4">作品概要</dt>
+                    <dd class="col-12">
+                        私の所属するチームは、講義室の前で講義が終わるのを待っている人達に着目しました。大学生はパソコンなど重い荷物をもっているため、リュックサックを背負っていることが多いと考えられます。普通のイスでは、リュックサックを前に抱えなおさないと座れません。講義前の少しの時間だけ使用することを考え
+                        少しだけ腰かけ、すぐに立ち上がれるようなスツールを制作することになりました。最終的に、少し背の高い椅子でリュックサックを背負ったまま腰を掛けることができるスツールを設計し制作しました。
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid mt-5">
+        <div class="black-background">
+            <dl class="row">
+                <div class="col">
+                    <dt>Email</dt>
+                    <dd>m.kishino0921@gmail.com</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- offcanvasをリンク押したら閉じるように -->
+    <script>
+
+        function closeOffcanvas() {
+            var offcanvas = document.getElementById('offcanvasTop');
+            var offcanvasBS = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasBS.hide();
+        }
+
+
+    </script>
+
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+
+    <!-- End Example Code -->
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ja">
+
+
+<!-- ハンバーガーアイコンがクリックするときになぜか動く
+
+検索バーはどうやって使うのか
+
+アップロードの仕方
+
+なぜか右側にドローン操作のカードが表示される -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/docs.css" rel="stylesheet">
+    <title>kishino's portfolio</title>
+
+    <style>
+        html,
+        body {
+            overflow-y: auto;
+        }
+
+        .black-background {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 60px 20px;
+            text-align: right;
+        }
+
+        .card-img-top {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }
+
+        
+    </style>
+
+</head>
+
+<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+
+<body class="p-3 mb2 bg-dark-subtle text-dark">
+
+    <!-- Example Code -->
+    <nav class="navbar navbar-transparent bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- <button class="btn btn-dark text-white position-fixed top-0 end-0" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+        data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="閉じる"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works" onclick="closeOffcanvas()">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- hrefで位置をしていしてonclick="closeoffcanva"でoffcanvasを閉じる -->
+                            <a class="nav-link" href="#about" onclick="closeOffcanvas()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="closeOffcanvas()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="row g-2 align-items-center justify-content-end" role="search">
+                <div class="col-auto">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-outline-white" type="submit">Search</button>
+                </div>
+            </form> -->
+        </div>
+    </div>
+
+
+    <div id="canvas-parent" class="text-start">
+        <div class="overray px-4 py-5">
+            <h1 class="display-1">Kishino's Portfolio</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <img src="img/my.jpg" class="img-fluid">
+    </div>
+
+
+
+
+
+    <div id="works" class="container-fluid mt-5">
+        <h1 class="display-4 mb-4">Works</h1>
+    
+        <div class="row justify-content-start">
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="poipoi.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/poipoi1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">ぽいぽいふぇありー</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="keshigomu.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/kesi1.heic" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">消し太郎&消し子</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="mushimegane.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/musi1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">ざ・わーるど・おぶ・むしめがね</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="osake.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/osake.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">酔夢キャンバス</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="imomushi.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/Rimomushi.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">はばたけ！！いもむし！</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="tinanago.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/Rtinanago.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">チンアナゴアイドル～君は完璧で究極のチンアナゴ～</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="tokei.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/Rtokei.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">memOck</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="drone.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/Rdrone.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">身体を使ったドローン操作</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="text-center">
+                    <!-- <div class="col-10 mb-4"> -->
+                        <a href="shopBot.html" style="text-decoration: none;">
+                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                                <img src="img/isu_5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">ShopBotを用いた作品</h5>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <hr>
+    <!-- mtは上どのくらいあけるかでmdは下どのくらい開けるか -->
+    <!-- topは上startは左bottomは下endは右 -->
+    <div id="about" class="container-fluid mt-5">
+        <h1 class="display-4 mb-4">About</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-top">KISHINO MANAMI</h1>
+                <h4 class="text-top" style="font-weight: normal;">岸野 愛美</h4>
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="img/my_pic.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <dl class="text-mid">
+                    <div class="row">
+                        <dt class="col-4">所属</dt>
+                        <dd class="col-8">明星大学大学院 情報学研究科 情報学専攻</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">研究室</dt>
+                        <dd class="col-8">インタラクティブメディア（尼岡利崇）研究室</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">連絡先</dt>
+                        <dd class="col-8">m.kishino0921@gmail.com</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">開発環境</dt>
+                        <dd class="col-8">Processing(Java), Arduino(C/C++), openFrameworks, Python</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">使用技術</dt>
+                        <dd class="col-8">fusion 360, Tinkercad ,blender</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">趣味</dt>
+                        <dd class="col-8">ドライブ, 展示/ライブ/映画鑑賞, 3Dプリンタ, ゲーム, <br/>ギター, ぬいぐるみ</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid mt-5">
+        <div class="black-background">
+            <dl class="row">
+                <div class="col">
+                    <dt>Email</dt>
+                    <dd>m.kishino0921@gmail.com</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- offcanvasをリンク押したら閉じるように -->
+    <script>
+
+        function closeOffcanvas() {
+            var offcanvas = document.getElementById('offcanvasTop');
+            var offcanvasBS = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasBS.hide();
+        }
+
+
+    </script>
+
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+
+    <!-- End Example Code -->
+</body>
+
+</html>

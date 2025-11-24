@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/docs.css" rel="stylesheet">
+    <title>kishino's portfolio</title>
+
+    <style>
+        html,
+        body {
+            overflow-y: auto;
+        }
+
+        .black-background {
+            background-color: black;
+            color: white;
+            padding: 60px 20px;
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+
+<body class="p-3 mb2 bg-dark-subtle text-dark">
+
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-transparent bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- <button class="btn btn-dark text-white position-fixed top-0 end-0" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+        data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="閉じるe"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#works" onclick="closeOffcanvas()">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- hrefで位置をしていしてonclick="closeoffcanva"でoffcanvasを閉じる -->
+                            <a class="nav-link" href="index.html#about" onclick="closeOffcanvas()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" onclick="closeOffcanvas()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="row g-2 align-items-center justify-content-end" role="search">
+                <div class="col-auto">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-outline-white" type="submit">Search</button>
+                </div>
+            </form> -->
+        </div>
+    </div>
+
+
+    <div id="canvas-parent" class="text-start">
+        <div class="overray px-4 py-5">
+            <!-- text-decoration: none;は下の線を表示しないようにする color: inherit;は文字色をbodyとかの背景に合わせる -->
+            <h1 class="display-1"><a href="index.html#works" style="text-decoration: none; color: inherit;">Works</a>
+            </h1>
+        </div>
+    </div>
+
+    <div id="about" class="container-fluid mt-6">
+        <div class="row">
+            <div class="col-12-md-6">
+                <h1 class="text-top">ざ・わーるど・おぶ・むしめがね</h1>
+
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+                        
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/musi1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/musi2.heic" class="d-block w-100" alt="葉っぱの写真">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/musi3.heic" class="d-block w-100" alt="IRカメラの写真">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <video class="d-block w-100" controls>
+                        <source src="video/musiMOV.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      
+                      
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="col-md-6">
+                <dl class="text-mid">
+                    <div class="row">
+                        <dt class="col-4"><a href="https://youtu.be/-sejzJROJT0" target="_blank">
+                                youtubeリンク
+                                </a></dt>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">使用技術</dt>
+                        <dd class="col-8">openFrameworks,openCV</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">制作年月</dt>
+                        <dd class="col-8">2024年10-12月</dd>
+                    </div>
+                    <p class="text mt-4">この作品はナラティブインタラクションという自身が提唱するインタラクションの概念の検証のため，卒業研究で制作された．
+                        ナラティブインタラクションは，人と物のインタラクションを通じて，物に物語を与えるものである．
+                        ナラティブインタラクションは，2つのインタラクション手法を包括する概念である．<br/>
+                        1つ目：物語を伝えるためのインタラクション<br/>
+                        2つ目：インタラクションそのものに物語性を与える<br/>
+                        この作品は2つ目のインタラクション手法に基づいて制作された．
+                    <br/>この作品は，オープンキャンパスや，多摩センターで展示を行なった．</p>
+                        <dt class="col-4">作品概要</dt>
+                        <dd class="col-12">虫眼鏡デバイスで丸・三角・四角の形状をみるとそこからキャラクターが生成される作品である．<br/>
+                            虫眼鏡は一般的に，小さな生き物を観るために使用される．この作品では，この虫眼鏡は多くの生き物を観てきたので，虫眼鏡が見ている世界では全てのものが生きているのではないかという世界観のもと制作が行われた．虫眼鏡デバイスはその虫眼鏡の視点を体験することができるデバイスである．
+                            体験を通して，世界にはあらゆるところに命が宿っているかもしれないという新たな視点を提供する体験を設計している．
+                           </dd>
+                        <dt class="col-4">実装方法</dt>
+                        <dd class="col-12">虫眼鏡デバイスは，webカメラ，円形ディスプレイ，PCから構成される．webカメラから得た画像を，openFramewroksでopenCVを用いてエッジを取得し，頂点数から形状認識を行なっている．
+                            その形状の場所から，その形状のキャラクターが生成されるアニメーションを再生する．
+                        </dd>
+                        <dt class="col-4">受賞</dt>
+                        <p class="col-12 mb-1">
+                            <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank">
+                                明星大学 情報学部卒研展2024 教職員賞
+                                </a>
+                            </p>
+                </dl>
+            </div>
+        </div>
+    </div>
+            <!-- <div class="col-md-6">
+                <img src="img/Rimomushi.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-6">
+                <dl class="text-mid">
+                    <div class="row">
+                        <dt class="col-4">使用技術</dt>
+                        <dd class="col-8">Processing,IRカメラ,IRLED</dd>
+                    </div>
+                    <p class="text mt-4">三年生後期の授業で作ったものです。</p>
+                </dl>
+            </div> -->
+        </div>
+    </div>
+    <div id="contact" class="container-fluid mt-5">
+        <div class="black-background">
+            <dl class="row">
+                <div class="col">
+                    <dt>Email</dt>
+                    <dd>m.kishino0921@gmail.com</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- offcanvasをリンク押したら閉じるように -->
+    <script>
+
+        function closeOffcanvas() {
+            var offcanvas = document.getElementById('offcanvasTop');
+            var offcanvasBS = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasBS.hide();
+        }
+
+
+    </script>
+
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+
+    <!-- End Example Code -->
+</body>
+
+</html>
