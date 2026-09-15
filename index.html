@@ -11,13 +11,16 @@
 なぜか右側にドローン操作のカードが表示される -->
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="./assets/css/docs.css" rel="stylesheet"> -->
+     <!-- 変更箇所 -->
     <link rel="stylesheet" href="assets/docs.css">
     <title>kishino's portfolio</title>
+    
 
     <style>
         html,
@@ -26,8 +29,8 @@
         }
 
         .black-background {
-            background-color: rgb(0, 0, 0);
-            color: white;
+            background-color: #54637f;
+            color: #ffffff;
             padding: 60px 20px;
             text-align: right;
         }
@@ -43,6 +46,9 @@
 
 </head>
 
+<!-- 変更箇所 -->
+<body class="p-3"></body>
+
 <!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
 <!-- =========================
      ハンバーガーボタン
@@ -53,7 +59,7 @@
     data-bs-toggle="offcanvas"
     data-bs-target="#offcanvasMenu"
     aria-controls="offcanvasMenu"
-    aria-label="メニューを開く"
+    aria-label="offcanvasMenu"
 >
     <span></span>
     <span></span>
@@ -80,7 +86,6 @@
                     class="nav-link active"
                     aria-current="page"
                     href="#"
-                    data-bs-dismiss="offcanvas"
                 >
                     Home
                 </a>
@@ -89,8 +94,7 @@
             <li class="nav-item">
                 <a
                     class="nav-link"
-                    href="#works"
-                    data-bs-dismiss="offcanvas"
+                    href="index.html#works"
                 >
                     Works
                 </a>
@@ -100,7 +104,6 @@
                 <a
                     class="nav-link"
                     href="#about"
-                    data-bs-dismiss="offcanvas"
                 >
                     About
                 </a>
@@ -110,7 +113,6 @@
                 <a
                     class="nav-link"
                     href="#contact"
-                    data-bs-dismiss="offcanvas"
                 >
                     Contact
                 </a>
@@ -121,15 +123,17 @@
     </div>
 
 </div>
-
+<!-- 変更箇所 -->
 
     <div id="canvas-parent" class="text-start">
         <div class="overray px-4 py-5">
+            <div class="text-center">
             <h1 class="display-1">Kishino's Portfolio</h1>
+            </div>
         </div>
     </div>
     <div class="container-fluid">
-        <img src="img/my.jpg" class="img-fluid">
+        <img src="img/hikousi.PNG" class="img-fluid w-50 d-block mx-auto">
     </div>
 
 
@@ -137,17 +141,19 @@
 
 
     <div id="works" class="container-fluid mt-5">
+        <div class="text-center">
         <h1 class="display-4 mb-4">Works</h1>
+        </div>
 
         <div class="row justify-content-start">
             <div class="col-md-6 mb-5">
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="nuimoti.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
-                                <img src="img/poipoi1.jpg" class="card-img-top" alt="...">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
+                                <img src="img/nui1.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ぬいもち〜ず</h5>
+                                    <h5 class="card-title fs-4">ぬいもち〜ず</h5>
                                 </div>
                             </div>
                         </a>
@@ -158,10 +164,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="poipoi.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/poipoi1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ぽいぽいふぇありー</h5>
+                                    <h5 class="card-title fs-4">ぽいぽいふぇありー</h5>
                                 </div>
                             </div>
                         </a>
@@ -172,10 +178,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="keshigomu.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/kesi1.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">消し太郎&消し子</h5>
+                                    <h5 class="card-title fs-4">消し太郎&消し子</h5>
                                 </div>
                             </div>
                         </a>
@@ -186,10 +192,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="mushimegane.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/musi1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ざ・わーるど・おぶ・むしめがね</h5>
+                                    <h5 class="card-title fs-4">ざ・わーるど・おぶ・むしめがね</h5>
                                 </div>
                             </div>
                         </a>
@@ -200,10 +206,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="3Dsakuhin.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/sherif1.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">武器庫(3Dプリンタ作品)</h5>
+                                    <h5 class="card-title fs-4">武器庫(3Dプリンタ作品)</h5>
                                 </div>
                             </div>
                         </a>
@@ -214,10 +220,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="osake.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/osake.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">酔夢キャンバス</h5>
+                                    <h5 class="card-title fs-4">酔夢キャンバス</h5>
                                 </div>
                             </div>
                         </a>
@@ -228,10 +234,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="imomushi.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/Rimomushi.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">はばたけ！！いもむし！</h5>
+                                    <h5 class="card-title fs-4">はばたけ！！いもむし！</h5>
                                 </div>
                             </div>
                         </a>
@@ -242,10 +248,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="tinanago.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/Rtinanago.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">チンアナゴアイドル～君は完璧で究極のチンアナゴ～</h5>
+                                    <h5 class="card-title fs-4">チンアナゴアイドル～君は完璧で究極のチンアナゴ～</h5>
                                 </div>
                             </div>
                         </a>
@@ -256,10 +262,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="tokei.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/Rtokei.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">memOck</h5>
+                                    <h5 class="card-title fs-4">memOck</h5>
                                 </div>
                             </div>
                         </a>
@@ -270,10 +276,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="drone.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/Rdrone.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">身体を使ったドローン操作</h5>
+                                    <h5 class="card-title fs-4">身体を使ったドローン操作</h5>
                                 </div>
                             </div>
                         </a>
@@ -284,10 +290,10 @@
                 <div class="text-center">
                     <!-- <div class="col-10 mb-4"> -->
                         <a href="shopBot.html" style="text-decoration: none;">
-                            <div class="card-bg-dark-subtle text-dark d-inline-block">
+                            <div class="card-bg-dark-subtle custom-card d-inline-block">
                                 <img src="img/isu_5.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ShopBotを用いた作品</h5>
+                                    <h5 class="card-title fs-4">ShopBotを用いた作品</h5>
                                 </div>
                             </div>
                         </a>
@@ -297,10 +303,6 @@
         </div>
     </div>
     
-
-
-
-
 
 
 
@@ -333,15 +335,22 @@
                     </div>
                     <div class="row">
                         <dt class="col-4">開発環境</dt>
-                        <dd class="col-8">Processing(Java), Arduino(C/C++), openFrameworks, Python</dd>
+                        <dd class="col-8">Processing(Java), Arduino(C/C++), openFrameworks, Python, p5.js</dd>
                     </div>
                     <div class="row">
                         <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">fusion 360, Tinkercad ,blender,Inkscape</dd>
+                        <dd class="col-8">fusion 360, Maya, Tinkercad, blender, Inkscape, Unity</dd>
                     </div>
                     <div class="row">
                         <dt class="col-4">趣味</dt>
                         <dd class="col-8">ドライブ, 展示/ライブ/映画鑑賞, 3Dプリンタ, ゲーム, <br/>ギター, ぬいぐるみ</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-4">受賞</dt>
+                        <dd class="col-8">
+                            明星大学 情報学部卒研展2024 教職員賞<br/>NICOGRAPH2025 NICOGTAPH賞 <br/>NICOGRAPH2024 ポスター賞<br/>
+                            映像表現・芸術科学フォーラム2025 ポスター発表賞<br/>かわいい感性デザイン賞 優秀賞
+                        </dd>
                     </div>
                 </dl>
             </div>
@@ -365,19 +374,69 @@
 
 
     <!-- offcanvasをリンク押したら閉じるように -->
-    <script>
-
-        function closeOffcanvas() {
-            var offcanvas = document.getElementById('offcanvasTop');
-            var offcanvasBS = bootstrap.Offcanvas.getInstance(offcanvas);
-            offcanvasBS.hide();
-        }
-
-
-    </script>
-
     <script src="./assets/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/docs.js"></script>
+<script>
+    const offcanvasMenu = document.getElementById('offcanvasMenu');
+    const hamburgerButton = document.querySelector('.hamburger-btn');
+
+    // ハンバーガー → ×
+    offcanvasMenu.addEventListener('show.bs.offcanvas', function () {
+        hamburgerButton.classList.add('active');
+    });
+
+    // × → ハンバーガー
+    offcanvasMenu.addEventListener('hide.bs.offcanvas', function () {
+        hamburgerButton.classList.remove('active');
+    });
+
+
+    // メニュー内のリンク
+    const menuLinks = document.querySelectorAll(
+        '#offcanvasMenu .nav-link'
+    );
+
+    menuLinks.forEach(function (link) {
+
+        link.addEventListener('click', function (event) {
+
+            const targetId = link.getAttribute('href');
+
+            // #works、#about、#contact の場合
+            if (targetId.startsWith('#') && targetId.length > 1) {
+
+                event.preventDefault();
+
+                const target = document.querySelector(targetId);
+
+                // offcanvasを取得
+                const offcanvas =
+                    bootstrap.Offcanvas.getInstance(offcanvasMenu);
+
+                // メニューを閉じる
+                offcanvas.hide();
+
+                // 閉じ終わってから移動
+                offcanvasMenu.addEventListener(
+                    'hidden.bs.offcanvas',
+                    function () {
+
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                    },
+                    { once: true }
+                );
+            }
+        });
+
+    });
+</script>
+
+<script src="./assets/js/docs.js"></script>
+
+</body>
+</html>
 
     <!-- End Example Code -->
 </body>

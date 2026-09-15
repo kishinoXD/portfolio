@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="./assets/css/docs.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/docs.css">
     <title>kishino's portfolio</title>
 
     <style>
@@ -15,8 +16,8 @@
         }
 
         .black-background {
-            background-color: black;
-            color: white;
+            background-color: #54637f;
+            color: #ffffff;
             padding: 60px 20px;
             text-align: right;
         }
@@ -24,64 +25,84 @@
 
 </head>
 
+<!-- 変更箇所 -->
+<body class="p-3"></body>
+
 <!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+<!-- =========================
+     ハンバーガーボタン
+========================= -->
+<button
+    class="hamburger-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasMenu"
+    aria-controls="offcanvasMenu"
+    aria-label="offcanvasMenu"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
-<body class="p-3 mb2 bg-dark-subtle text-dark">
 
-    <!-- Example Code -->
+<!-- =========================
+     右から出てくるメニュー
+========================= -->
+<div
+    class="offcanvas offcanvas-end custom-offcanvas"
+    tabindex="-1"
+    id="offcanvasMenu"
+    aria-labelledby="offcanvasMenuLabel"
+>
 
-    <nav class="navbar navbar-transparent bg-transparent fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                aria-controls="offcanvasTop" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+    <div class="offcanvas-body">
 
+        <ul class="nav flex-column">
 
-    <!-- <button class="btn btn-dark text-white position-fixed top-0 end-0" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-        <span class="navbar-toggler-icon"></span>
-    </button> -->
+            <li class="nav-item">
+                <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html#"
+                >
+                    Home
+                </a>
+            </li>
 
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
-        data-bs-theme="dark">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="閉じるe"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="row justify-content-end">
-                <div class="col-auto">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#works" onclick="closeOffcanvas()">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <!-- hrefで位置をしていしてonclick="closeoffcanva"でoffcanvasを閉じる -->
-                            <a class="nav-link" href="index.html#about" onclick="closeOffcanvas()">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact" onclick="closeOffcanvas()">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <form class="row g-2 align-items-center justify-content-end" role="search">
-                <div class="col-auto">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-outline-white" type="submit">Search</button>
-                </div>
-            </form> -->
-        </div>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="index.html#works"
+                >
+                    Works
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="index.html#about"
+                >
+                    About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="index.html#contact"
+                >
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
     </div>
 
+</div>
+<!-- 変更箇所 -->
 
     <div id="canvas-parent" class="text-start">
         <div class="overray px-4 py-5">
@@ -214,19 +235,67 @@
 
 
 
-    <!-- offcanvasをリンク押したら閉じるように -->
-    <script>
-
-        function closeOffcanvas() {
-            var offcanvas = document.getElementById('offcanvasTop');
-            var offcanvasBS = bootstrap.Offcanvas.getInstance(offcanvas);
-            offcanvasBS.hide();
-        }
-
-
-    </script>
-
+     <!-- offcanvasをリンク押したら閉じるように -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
+<script>
+    const offcanvasMenu = document.getElementById('offcanvasMenu');
+    const hamburgerButton = document.querySelector('.hamburger-btn');
+
+    // ハンバーガー → ×
+    offcanvasMenu.addEventListener('show.bs.offcanvas', function () {
+        hamburgerButton.classList.add('active');
+    });
+
+    // × → ハンバーガー
+    offcanvasMenu.addEventListener('hide.bs.offcanvas', function () {
+        hamburgerButton.classList.remove('active');
+    });
+
+
+    // メニュー内のリンク
+    const menuLinks = document.querySelectorAll(
+        '#offcanvasMenu .nav-link'
+    );
+
+    menuLinks.forEach(function (link) {
+
+        link.addEventListener('click', function (event) {
+
+            const targetId = link.getAttribute('href');
+
+            // #works、#about、#contact の場合
+            if (targetId.startsWith('#') && targetId.length > 1) {
+
+                event.preventDefault();
+
+                const target = document.querySelector(targetId);
+
+                // offcanvasを取得
+                const offcanvas =
+                    bootstrap.Offcanvas.getInstance(offcanvasMenu);
+
+                // メニューを閉じる
+                offcanvas.hide();
+
+                // 閉じ終わってから移動
+                offcanvasMenu.addEventListener(
+                    'hidden.bs.offcanvas',
+                    function () {
+
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                    },
+                    { once: true }
+                );
+            }
+        });
+
+    });
+</script>
+
+<script src="./assets/js/docs.js"></script>
 
     <!-- End Example Code -->
 </body>
