@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="ja">
+
+
+<!-- ハンバーガーアイコンがクリックするときになぜか動く
+
+検索バーはどうやって使うのか
+
+アップロードの仕方
+
+なぜか右側にドローン操作のカードが表示される -->
+
+
+
+<head>
+    <!-- google fontフォント指定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="./assets/css/docs.css" rel="stylesheet"> -->
+    <!-- 変更箇所 -->
+    <link rel="stylesheet" href="assets/docs.css">
+    <title>kishino's portfolio</title>
+
+</head>
+
+
+<!-- 変更箇所 -->
+
+<body class="p-3">
+
+    <!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+    <!-- =========================
+     ハンバーガーボタン
+========================= -->
+    <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu" aria-label="offcanvasMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- =========================
+     右から出てくるメニュー
+========================= -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel">
+
+        <div class="offcanvas-body">
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#canvas-parent">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#works">
+                        Works
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- 変更箇所 -->
+
+    <div id="canvas-parent" class="text-start">
+        <div class="overray px-4 py-5">
+            <div class="text-center">
+                <h1 class="display-1">Kishino's Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <img src="img/hikousi.PNG" class="img-fluid w-50 d-block mx-auto" style="margin-bottom: 200px;">
+    </div>
+
+
+
+
+
+    <div id="works" class="container-fluid mt-5">
+        <div class="text-center">
+            <div class="columTitle">Works</div>
+        </div>
+        <!-- 作品カード -->
+        <div class="row justify-content-center works-grid">
+            <!-- 信号機の中のぴかる -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="pikaru.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/pikaru1.png" class="card-img-top" alt="信号機の中のぴかる">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="pikaru.html" class="work-title-link">
+                                <h5 class="card-title">信号機の中のぴかる</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2026
+                            </p>
+
+                            <p class="work-description">
+                                押しボタン信号機を用いて信号機の中の人の物語を分岐させるインタラクティブ作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ぬいもちーず -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="nuimoti.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/nui1.jpeg" class="card-img-top" alt="ぬいもちーず">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="nuimoti.html" class="work-title-link">
+                                <h5 class="card-title">ぬいもちーず</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2025-26
+                            </p>
+
+                            <p class="work-description">
+                                ぬいぐるみが持つ持ち主との記憶を音のふるまいとして表現するインタラクティブ作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ぽいぽいふぇありー -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="poipoi.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/poipoi1.jpg" class="card-img-top" alt="ぽいぽいふぇありー">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="poipoi.html" class="work-title-link">
+                                <h5 class="card-title">ぽいぽいふぇありー</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2025-
+                            </p>
+
+                            <p class="work-description">
+                                ゴミ分別を学べるインタラクティブ作品．正しいゴミ分別をすることは，妖精を元の世界に還してあげる物語のある行為として捉えさせる作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 消し太郎＆消し子 -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="keshigomu.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/kesi1.jpeg" class="card-img-top" alt="消し太郎＆消し子">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="keshigomu.html" class="work-title-link">
+                                <h5 class="card-title">消し太郎＆消し子</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2024
+                            </p>
+
+                            <p class="work-description">
+                                消しゴムに物語を与えた作品．消しゴムは使用され，小さくなっていくと歳をとる．消しゴムを使用し，デバイスに乗せることで，消しゴムの物語を鑑賞することができる．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ざ・わーるど・おぶ・むしめがね -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="mushimegane.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/musi1.jpg" class="card-img-top" alt="ざ・わーるど・おぶ・むしめがね">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="mushimegane.html" class="work-title-link">
+                                <h5 class="card-title">ざ・わーるど・おぶ・むしめがね</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2024
+                            </p>
+
+                            <p class="work-description">
+                                虫眼鏡を覗くという行為に物語性を与えた作品．虫眼鏡が見ている世界では全ての物が生きている．その虫眼鏡の視点を体験することができる作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- マーブルマシーン -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="yuuenti.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/yuuenti1.jpeg" class="card-img-top" alt="マーブルマシーン">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="yuuenti.html" class="work-title-link">
+                                <h5 class="card-title">遊園地マーブルマシーン</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2025
+                            </p>
+
+                            <p class="work-description">
+                                遊園地のようなマーブルマシーン．ボタンを押して観覧車にビー玉を乗せよう！
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ３Dプリンタ作品 -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="3Dsakuhin.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/sherif1.jpeg" class="card-img-top" alt="シェリフ">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="3Dsakuhin.html" class="work-title-link">
+                                <h5 class="card-title">武器庫</h5>
+                            </a>
+
+                            <p class="work-category">
+                                3Dprinter Work | 2024-
+                            </p>
+
+                            <p class="work-description">
+                                3Dプリンタで制作したゲームの武器たち．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 酔夢キャンバス -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="osake.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/osake.jpg" class="card-img-top" alt="酔夢キャンバス">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="osake.html" class="work-title-link">
+                                <h5 class="card-title">酔夢キャンバス</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023-24
+                            </p>
+
+                            <p class="work-description">
+                                夏のハンガリーでよく飲まれる"Fröccs（フルッチュ）"をモチーフとした作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- はばたけ！！いもむし！ -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="imomushi.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/imomushi.jpg" class="card-img-top" alt="はばたけ！！いもむし！">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="imomushi.html" class="work-title-link">
+                                <h5 class="card-title">はばたけ！！いもむし！</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023-24
+                            </p>
+
+                            <p class="work-description">
+                                嫌われがちな芋虫に葉っぱをあげて，綺麗な蝶に変身させる作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- チンアナゴアイドル～君は完璧で究極のチンアナゴ～ -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="tinanago.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/tinanago.jpg" class="card-img-top" alt="チンアナゴアイドル～君は完璧で究極のチンアナゴ～">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="tinanago.html" class="work-title-link">
+                                <h5 class="card-title">チンアナゴアイドル<br />～君は完璧で究極のチンアナゴ～</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023
+                            </p>
+
+                            <p class="work-description">
+                                ファンの応援があってこそアイドルは輝ける．ペンライトを振って，チンアナゴアイドルたちを応援する作品．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ブラッカソン -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="blackason.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/black1.JPG" class="card-img-top" alt="ブラッカソン">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="blackason.html" class="work-title-link">
+                                <h5 class="card-title">TWing mission : ざっくりロケット開発大作戦！</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2026
+                            </p>
+
+                            <p class="work-description">
+                                二人羽織をしながらロケット開発をする作品．<br />「ブラッカソン（ブラックサンダー×ハッカソン）」にて開発．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 日テレハッカソン -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="ntv.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/ntv1.jpeg" class="card-img-top" alt="日テレハッカソン">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="ntv.html" class="work-title-link">
+                                <h5 class="card-title">国王の願いを叶えて、<br />UFOで地球の建物をキャッチせよ！</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2026
+                            </p>
+
+                            <p class="work-description">
+                                航空写真から，お題の建物を見つけ，UFOで捕まえる作品．<br />「日テレ クリエイティブメディアハッカソン」にて制作．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 釣りラジオ -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="turirajio.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/turiraji.jpeg" class="card-img-top" alt="釣りラジオ">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="turirajio.html" class="work-title-link">
+                                <h5 class="card-title">キャッチキャッチキャッチー</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2025
+                            </p>
+
+                            <p class="work-description">
+                                釣りをしてラジオの選曲をする作品．ラジオの周波数をキャッチすることと，釣りで獲物をキャッチすることをかけた作品．オリジナルのラジオ制作のワークショップにて制作．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- memOck -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="tokei.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/tokei.jpg" class="card-img-top" alt="memOck">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="tokei.html" class="work-title-link">
+                                <h5 class="card-title">memOck</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023
+                            </p>
+
+                            <p class="work-description">
+                                時計の針を回転させることで，展示会場の歴史をめぐることができる作品．時計の材料は，展示会場で過去に使われていたものを使用しており，材料自体が，その場所を記憶していると考える．<br />
+                                ハッカソン「モノの移り変わり」にて制作．
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ドローン -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="drone.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/Rdrone.png" class="card-img-top" alt="ドローン">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="drone.html" class="work-title-link">
+                                <h5 class="card-title">身体を使ったドローン操作</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023
+                            </p>
+
+                            <p class="work-description">
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ShopBotを用いた作品 -->
+            <div class="col-md-5 mb-5 work-item">
+                <div class="text-center">
+                    <div class="custom-card">
+
+                        <a href="shopBot.html" class="work-image-link">
+                            <div class="octagon-frame">
+
+                                <img src="img/isu_4.jpg" class="card-img-top" alt="ShopBotを用いた作品">
+
+                                <svg class="octagon-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                                    <polygon points="1,35 1,10 10,1 90,1 99,10 99,90 90,99 10,99 1,90 1,35"
+                                        pathLength="950" />
+                                </svg>
+
+                            </div>
+                        </a>
+
+                        <div class="work-info">
+
+                            <a href="shopBot.html" class="work-title-link">
+                                <h5 class="card-title">ShopBotを用いた作品</h5>
+                            </a>
+
+                            <p class="work-category">
+                                Interactive Art | 2023
+                            </p>
+
+                            <p class="work-description">
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="section-line">
+    <!-- <hr> -->
+    <!-- mtは上どのくらいあけるかでmdは下どのくらい開けるか -->
+    <!-- topは上startは左bottomは下endは右 -->
+    <div id="about" class="container-fluid about-width">
+        <div class="text-center">
+            <div class="columTitle">
+                About
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-md-12">
+                <h1 class="text-top">KISHINO MANAMI</h1>
+                <h4 class="text-top" style="font-weight: normal;">岸野 愛美</h4>
+            </div> -->
+            <div class="col-md-5 mb-4">
+                <img src="img/mypic.jpeg" class="about-img">
+            </div>
+            <div class="col-md-7">
+                <dl class="text-mid">
+                    <div class="col-md-12">
+                        <div class="about-name-wrap">
+                            <h1 class="text-top" style="font-weight: normal; margin-bottom: 30px;">
+                                岸野 愛美
+                            </h1>
+                            <p class="about-name">
+                                MANAMI KISHINO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12" style="font-size: 1.3rem;margin-bottom: 30px ;">
+                        物に物語を与え，日常の見え方を少し変える作品作り．
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">所属</dt>
+                        <dd class="col-9">明星大学大学院 情報学研究科 情報学専攻</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">研究室</dt>
+                        <dd class="col-9">インタラクティブメディア（尼岡利崇）研究室</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">連絡先</dt>
+                        <dd class="col-9">m.kishino0921@gmail.com</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">開発環境</dt>
+                        <dd class="col-9">Processing(Java), Arduino(C/C++), openFrameworks, Python, p5.js</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">使用技術</dt>
+                        <dd class="col-9">fusion 360, Maya, Tinkercad, blender, Inkscape, Unity</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">趣味</dt>
+                        <dd class="col-9">ドライブ, 展示/ライブ/映画鑑賞, 3Dプリンタ, ゲーム, ギター, ぬいぐるみ</dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">受賞</dt>
+                        <dd class="col-9">
+                            <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank" rel="nopener"
+                                class="yellow-link">
+                                明星大学 情報学部卒研展2024 教職員賞</a><br />
+                            <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="nopener"
+                                class="yellow-link">
+                                NICOGRAPH2025 NICOGRAPH賞 </a><br />
+                            <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="nopener"
+                                class="yellow-link">
+                                NICOGRAPH2024 ポスター賞</a><br />
+                            <a href="https://expressive-japan.art-science.org/awards.html" target="_blank" rel="nopener"
+                                class="yellow-link">
+                                映像表現・芸術科学フォーラム2025 ポスター発表賞</a><br />
+                            <a>
+                                かわいい感性デザイン賞2026 優秀賞
+                            </a>
+                        </dd>
+                    </div>
+                    <div class="row">
+                        <dt class="col-3">ハッカソン</dt>
+                        <dd class="col-9">
+                            <a href="https://lab.ntvhd.co.jp/topics/2026/04/post-24.html" target="_blank" rel="nopener"
+                                class="yellow-link">
+                                日テレ クリエイティブメディアハッカソン 参加</a><br />
+                            <a href="https://yurakuseika.co.jp/blackathon" target="_blank" rel="noopener"
+                                class="yellow-link">
+                                ブラッカソン 参加</a>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid mt-5">
+        <div class="black-background">
+            <dl class="row">
+                <div class="col">
+                    <dt>Email</dt>
+                    <dd>m.kishino0921@gmail.com</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- offcanvasをリンク押したら閉じるように -->
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+
+    <!-- マウスカーソル変更 -->
+    <!-- <div class="custom-cursor"></div>
+<script src="./assets/script2.js"></script> -->
+
+    <!-- End Example Code -->
+</body>
+
+</html>

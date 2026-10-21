@@ -10,6 +10,85 @@
    ハンバーガーボタン
 ========================= */
 
+
+html,
+body {
+    overflow-y: auto;
+}
+
+.black-background {
+    background-color: #54637f;
+    /* background-color: #FFF; */
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: right;
+}
+/* マウスカーソル変更 */
+/* .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 999999;
+
+    will-change: transform;
+}
+
+.custom-cursor.hover {
+    width: 35px;
+    height: 35px;
+} */
+.columTitle{
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+h1,
+h2,
+.nav-link,
+.columTitle{
+    font-family: "Orbitron", sans-serif;
+}
+
+.yellow-link {
+    display: inline-block;
+    position: relative;
+
+    color: #e5a400;
+    text-decoration: none;
+
+    margin-bottom: 0;
+}
+
+.yellow-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #e5a400;
+
+    /* 通常は薄め */
+    opacity: 0.6;
+
+    transition: opacity 0.3s ease;
+}
+
+.yellow-link:hover::after {
+    opacity: 1;
+}
+
 body {
     background-color: #0a1038;
     color: #e5a400;
@@ -150,7 +229,7 @@ body {
 
 .custom-offcanvas .nav-link {
 
-    color: white;
+    color: #e5a400;
 
     font-size: 3rem;
 
@@ -167,7 +246,7 @@ body {
 /* マウスを乗せたとき */
 
 .custom-offcanvas .nav-link:hover {
-    color: white;
+    color: #e5a400;
     opacity: 0.4;
 }
 
@@ -175,7 +254,7 @@ body {
 /* activeの色も白 */
 
 .custom-offcanvas .nav-link.active {
-    color: white;
+    color: #e5a400;
 }
 
 
@@ -199,6 +278,233 @@ body {
     .hamburger-btn {
         top: 20px;
         right: 20px;
+    }
+
+}
+
+/* html,
+body,
+body * {
+    cursor: none !important;
+} */
+
+
+/* カードの設定 */
+.card-img-top {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+}
+
+/* 画像下の情報スペース */
+.work-info {
+    min-height: 300px;
+    padding: 30px 10px;
+    text-align: left;
+}
+
+/* タイトル */
+.work-info .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+/* 分類など */
+.work-category {
+    font-size: 0.9rem;
+    opacity: 0.4;
+    transition: opacity 0.8s ease;
+    margin-bottom: 5px;
+}
+
+.custom-card:has(.octagon-frame:hover) .work-category,
+.custom-card:has(.work-title-link:hover) .work-category {
+    opacity: 0.6;
+}
+
+
+/* 説明 */
+.work-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.4;
+    transition: opacity 0.8s ease;
+}
+
+.custom-card:has(.octagon-frame:hover) .work-description,
+.custom-card:has(.work-title-link:hover) .work-description {
+    opacity: 1;
+}
+
+
+
+.work-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+/* Works全体 */
+.works-grid {
+    max-width: 1470px;
+    margin: 0 auto;
+}
+
+.work-item {
+    margin-bottom: 120px;
+}
+
+/* 偶数番目の作品だけ下げる */
+.work-item:nth-child(even) {
+    transform: translateY(150px);
+}
+
+/* 八角形画像 */
+.octagon-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 11 / 8;
+
+    clip-path: polygon(
+        10% 0,
+        90% 0,
+        100% 10%,
+        100% 90%,
+        90% 100%,
+        10% 100%,
+        0 90%,
+        0 10%
+    );
+}
+
+.octagon-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+
+    filter: brightness(1.0);
+    transition: filter 0.8s ease;
+}
+
+/* 外周 */
+.octagon-border {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+/* 線 */
+.octagon-border polygon {
+    fill: none;
+    stroke: #e5a400;
+    stroke-width: 0.5;
+    /* vector-effect: non-scaling-stroke; */
+
+    stroke-dasharray: 200 275;
+    stroke-dashoffset: 0;
+
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.octagon-frame:hover .octagon-border polygon,
+.custom-card:has(.work-title-link:hover) .octagon-border polygon {
+    /* どのくらい進ませるか */
+    stroke-dashoffset: -200;
+}
+
+
+.octagon-frame:hover img,
+.custom-card:has(.work-title-link:hover) .octagon-frame img {
+    filter: brightness(0.75);
+}
+
+
+
+.work-title-link {
+    display: inline-block;
+    position: relative;
+
+    color: inherit;
+    text-decoration: none;
+
+    margin-bottom: 0px;
+}
+
+.work-title-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #e5a400;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.5s ease;
+}
+
+.work-title-link:hover::after,
+.custom-card:has(.octagon-frame:hover) .work-title-link::after {
+    transform: scaleX(1);
+}
+
+.section-line {
+    width: 90%;
+    max-width: 1200px;
+
+    height: 2px;
+    border: none;
+    background-color: #e5a400;
+
+    margin: 120px auto;
+    opacity: 1;
+}
+
+
+.about-width{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.about-name-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.about-name{
+    font-size: 0.9rem;
+    opacity: 0.65;
+}
+
+
+
+@media (max-width: 767.98px) {
+
+    .work-item:nth-child(even) {
+        transform: none;
+    }
+
+    .work-item {
+        margin-bottom: 60px;
     }
 
 }

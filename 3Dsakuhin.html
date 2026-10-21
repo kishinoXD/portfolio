@@ -2,6 +2,9 @@
 <html lang="ja">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
@@ -26,83 +29,61 @@
 </head>
 
 <!-- 変更箇所 -->
-<body class="p-3"></body>
 
-<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
-<!-- =========================
+<body class="p-3">
+
+    <!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+    <!-- =========================
      ハンバーガーボタン
 ========================= -->
-<button
-    class="hamburger-btn"
-    type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasMenu"
-    aria-controls="offcanvasMenu"
-    aria-label="offcanvasMenu"
->
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+    <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu" aria-label="offcanvasMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 
-<!-- =========================
+    <!-- =========================
      右から出てくるメニュー
 ========================= -->
-<div
-    class="offcanvas offcanvas-end custom-offcanvas"
-    tabindex="-1"
-    id="offcanvasMenu"
-    aria-labelledby="offcanvasMenuLabel"
->
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel">
 
-    <div class="offcanvas-body">
+        <div class="offcanvas-body">
 
-        <ul class="nav flex-column">
+            <ul class="nav flex-column">
 
-            <li class="nav-item">
-                <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html#"
-                >
-                    Home
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#">
+                        Home
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#works"
-                >
-                    Works
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#works">
+                        Works
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#about"
-                >
-                    About
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">
+                        About
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#contact"
-                >
-                    Contact
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
 
     </div>
-
-</div>
-<!-- 変更箇所 -->
+    <!-- 変更箇所 -->
 
     <div id="canvas-parent" class="text-start">
         <div class="overray px-4 py-5">
@@ -121,44 +102,52 @@
             <div class="col-md-6">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        
-                      </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/sherif1.jpeg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/sherif2.jpeg" class="d-block w-100" alt="葉っぱの写真">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/riva.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/rikon1.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/rikon2.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/zeno.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                      </div>
-                      
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/sherif1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/sherif2.jpeg" class="d-block w-100" alt="葉っぱの写真">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/riva.jpeg" class="d-block w-100" alt="IRカメラの写真">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rikon1.jpeg" class="d-block w-100" alt="IRカメラの写真">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rikon2.jpeg" class="d-block w-100" alt="IRカメラの写真">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zeno.jpeg" class="d-block w-100" alt="IRカメラの写真">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
 
             <div class="col-md-6">
@@ -167,13 +156,14 @@
                         <dt class="col-4">使用技術</dt>
                         <dd class="col-8">Fusion360</dd>
                     </div>
-                    <p class="text mt-4">VALORANTというFPSゲームの武器のスキンを制作しています．<br/>Fusion360を作ってモデルを作り，3Dプリンタで出力しています．<br/>
-                    シェリフやリコンナイフは動かせます！(弾は打てません)</p>
+                    <p class="text mt-4">
+                        VALORANTというFPSゲームの武器のスキンを制作しています．<br />Fusion360を作ってモデルを作り，3Dプリンタで出力しています．<br />
+                        シェリフやリコンナイフは動かせます！(弾は打てません)</p>
                 </dl>
             </div>
         </div>
     </div>
-            <!-- <div class="col-md-6">
+    <!-- <div class="col-md-6">
                 <img src="img/Rimomushi.png" class="img-fluid">
             </div>
 
@@ -186,7 +176,7 @@
                     <p class="text mt-4">三年生後期の授業で作ったものです。</p>
                 </dl>
             </div> -->
-        </div>
+    </div>
     </div>
     <div id="contact" class="container-fluid mt-5">
         <div class="black-background">
@@ -207,67 +197,9 @@
 
 
 
-     <!-- offcanvasをリンク押したら閉じるように -->
+    <!-- offcanvasをリンク押したら閉じるように -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
-<script>
-    const offcanvasMenu = document.getElementById('offcanvasMenu');
-    const hamburgerButton = document.querySelector('.hamburger-btn');
-
-    // ハンバーガー → ×
-    offcanvasMenu.addEventListener('show.bs.offcanvas', function () {
-        hamburgerButton.classList.add('active');
-    });
-
-    // × → ハンバーガー
-    offcanvasMenu.addEventListener('hide.bs.offcanvas', function () {
-        hamburgerButton.classList.remove('active');
-    });
-
-
-    // メニュー内のリンク
-    const menuLinks = document.querySelectorAll(
-        '#offcanvasMenu .nav-link'
-    );
-
-    menuLinks.forEach(function (link) {
-
-        link.addEventListener('click', function (event) {
-
-            const targetId = link.getAttribute('href');
-
-            // #works、#about、#contact の場合
-            if (targetId.startsWith('#') && targetId.length > 1) {
-
-                event.preventDefault();
-
-                const target = document.querySelector(targetId);
-
-                // offcanvasを取得
-                const offcanvas =
-                    bootstrap.Offcanvas.getInstance(offcanvasMenu);
-
-                // メニューを閉じる
-                offcanvas.hide();
-
-                // 閉じ終わってから移動
-                offcanvasMenu.addEventListener(
-                    'hidden.bs.offcanvas',
-                    function () {
-
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-
-                    },
-                    { once: true }
-                );
-            }
-        });
-
-    });
-</script>
-
-<script src="./assets/js/docs.js"></script>
+    <script src="./assets/script.js"></script>
 
     <!-- End Example Code -->
 </body>

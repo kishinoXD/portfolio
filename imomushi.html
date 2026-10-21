@@ -2,6 +2,9 @@
 <html lang="ja">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
@@ -26,83 +29,61 @@
 </head>
 
 <!-- 変更箇所 -->
-<body class="p-3"></body>
 
-<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
-<!-- =========================
+<body class="p-3">
+
+    <!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
+    <!-- =========================
      ハンバーガーボタン
 ========================= -->
-<button
-    class="hamburger-btn"
-    type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasMenu"
-    aria-controls="offcanvasMenu"
-    aria-label="offcanvasMenu"
->
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+    <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu" aria-label="offcanvasMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 
-<!-- =========================
+    <!-- =========================
      右から出てくるメニュー
 ========================= -->
-<div
-    class="offcanvas offcanvas-end custom-offcanvas"
-    tabindex="-1"
-    id="offcanvasMenu"
-    aria-labelledby="offcanvasMenuLabel"
->
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel">
 
-    <div class="offcanvas-body">
+        <div class="offcanvas-body">
 
-        <ul class="nav flex-column">
+            <ul class="nav flex-column">
 
-            <li class="nav-item">
-                <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html#"
-                >
-                    Home
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#">
+                        Home
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#works"
-                >
-                    Works
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#works">
+                        Works
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#about"
-                >
-                    About
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">
+                        About
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    href="index.html#contact"
-                >
-                    Contact
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
 
     </div>
-
-</div>
-<!-- 変更箇所 -->
+    <!-- 変更箇所 -->
 
 
     <div id="canvas-parent" class="text-start">
@@ -122,46 +103,52 @@
             <div class="col-md-6">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                         <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
-                        
-                      </div>
+
+                    </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/Rimomushi.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/imomushi2.jpg" class="d-block w-100" alt="葉っぱの写真">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/imomushi3.jpg" class="d-block w-100" alt="IRカメラの写真">
-                      </div>
-                      <!-- <div class="carousel-item">
+                        <div class="carousel-item active">
+                            <img src="img/Rimomushi.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/imomushi2.jpg" class="d-block w-100" alt="葉っぱの写真">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/imomushi3.jpg" class="d-block w-100" alt="IRカメラの写真">
+                        </div>
+                        <!-- <div class="carousel-item">
                         <video class="d-block w-100" controls>
                         <source src="video/imomushi.mp4" type="video/mp4">
                         </video>
                       </div> -->
-                      
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
 
             <div class="col-md-6">
                 <dl class="text-mid">
                     <div class="row">
-                        <dt class="col-4"><a href="https://youtube.com/shorts/cS4I0KBWHnA?feature=share" target="_blank">
+                        <dt class="col-4"><a href="https://youtube.com/shorts/cS4I0KBWHnA?feature=share"
+                                target="_blank">
                                 youtubeリンク
-                                </a></dt>
+                            </a></dt>
                     </div>
                     <div class="row">
                         <dt class="col-4">使用技術</dt>
@@ -171,24 +158,27 @@
                         <dt class="col-4">制作年月</dt>
                         <dd class="col-8">2024年1月頃</dd>
                     </div>
-                    <p class="text mt-4">この作品はインタラクティブシステム2という授業でteamLab★Planetsの作品から発展させたインタラクティブシステムを作るという課題でチームで作成しました。私たちの作品は「人と共に踊る鯉によって描かれる水面のドローイング / Drawing on the Water Surface Created by the Dance of Koi and People - Infinity」を発展させて作ったものです。</p>
-                        <dt class="col-4">作品概要</dt>
-                        <dd class="col-12">いも虫というかわいくない生き物を、蝶という大衆に好かれる生き物にプロディースすることを体験できる作品です。
-                            いも虫にはっぱをあげると蝶に変身します。
-                            プロデュースした蝶は、10色から好きな色を選択できるので愛着を持つことができます。
-                            蝶になるときには変身音がなり、視覚だけでなく聴覚でも楽しめます。
-                            また、周りの音が大きかったら、いも虫や蝶がざわついて逃げまわります。
-                           </dd>
-                        <dt class="col-4">実装方法</dt>
-                        <dd class="col-12">床にプロジェクターでProcessingで作成したグラフィックスを映し出します。
-                            天井からIRカメラをつるし、葉っぱにはIR LEDが入れることで、
-                            それを天井からつるしているIRカメラから読み取ります。
-                            読み取った画像をProcessingから画像処理することにより、芋虫とのインタラクションを実現しています。</dd>
+                    <p class="text mt-4">
+                        この作品はインタラクティブシステム2という授業でteamLab★Planetsの作品から発展させたインタラクティブシステムを作るという課題でチームで作成しました。私たちの作品は「人と共に踊る鯉によって描かれる水面のドローイング
+                        / Drawing on the Water Surface Created by the Dance of Koi and People - Infinity」を発展させて作ったものです。
+                    </p>
+                    <dt class="col-4">作品概要</dt>
+                    <dd class="col-12">いも虫というかわいくない生き物を、蝶という大衆に好かれる生き物にプロディースすることを体験できる作品です。
+                        いも虫にはっぱをあげると蝶に変身します。
+                        プロデュースした蝶は、10色から好きな色を選択できるので愛着を持つことができます。
+                        蝶になるときには変身音がなり、視覚だけでなく聴覚でも楽しめます。
+                        また、周りの音が大きかったら、いも虫や蝶がざわついて逃げまわります。
+                    </dd>
+                    <dt class="col-4">実装方法</dt>
+                    <dd class="col-12">床にプロジェクターでProcessingで作成したグラフィックスを映し出します。
+                        天井からIRカメラをつるし、葉っぱにはIR LEDが入れることで、
+                        それを天井からつるしているIRカメラから読み取ります。
+                        読み取った画像をProcessingから画像処理することにより、芋虫とのインタラクションを実現しています。</dd>
                 </dl>
             </div>
         </div>
     </div>
-            <!-- <div class="col-md-6">
+    <!-- <div class="col-md-6">
                 <img src="img/Rimomushi.png" class="img-fluid">
             </div>
 
@@ -201,7 +191,7 @@
                     <p class="text mt-4">三年生後期の授業で作ったものです。</p>
                 </dl>
             </div> -->
-        </div>
+    </div>
     </div>
     <div id="contact" class="container-fluid mt-5">
         <div class="black-background">
@@ -222,67 +212,9 @@
 
 
 
-     <!-- offcanvasをリンク押したら閉じるように -->
+    <!-- offcanvasをリンク押したら閉じるように -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
-<script>
-    const offcanvasMenu = document.getElementById('offcanvasMenu');
-    const hamburgerButton = document.querySelector('.hamburger-btn');
-
-    // ハンバーガー → ×
-    offcanvasMenu.addEventListener('show.bs.offcanvas', function () {
-        hamburgerButton.classList.add('active');
-    });
-
-    // × → ハンバーガー
-    offcanvasMenu.addEventListener('hide.bs.offcanvas', function () {
-        hamburgerButton.classList.remove('active');
-    });
-
-
-    // メニュー内のリンク
-    const menuLinks = document.querySelectorAll(
-        '#offcanvasMenu .nav-link'
-    );
-
-    menuLinks.forEach(function (link) {
-
-        link.addEventListener('click', function (event) {
-
-            const targetId = link.getAttribute('href');
-
-            // #works、#about、#contact の場合
-            if (targetId.startsWith('#') && targetId.length > 1) {
-
-                event.preventDefault();
-
-                const target = document.querySelector(targetId);
-
-                // offcanvasを取得
-                const offcanvas =
-                    bootstrap.Offcanvas.getInstance(offcanvasMenu);
-
-                // メニューを閉じる
-                offcanvas.hide();
-
-                // 閉じ終わってから移動
-                offcanvasMenu.addEventListener(
-                    'hidden.bs.offcanvas',
-                    function () {
-
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-
-                    },
-                    { once: true }
-                );
-            }
-        });
-
-    });
-</script>
-
-<script src="./assets/js/docs.js"></script>
+    <script src="./assets/script.js"></script>
 
     <!-- End Example Code -->
 </body>
