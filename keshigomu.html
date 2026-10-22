@@ -84,157 +84,105 @@
 
     </div>
 
+    <div class="fixed-nav">
+        <a href="index.html#home">Home / </a>
+        <a href="index.html#works">Works</a>
+    </div>
 
-    <div id="canvas-parent" class="text-start">
-        <div class="overray px-4 py-5">
-            <!-- text-decoration: none;は下の線を表示しないようにする color: inherit;は文字色をbodyとかの背景に合わせる -->
-            <h1 class="display-1"><a href="index.html#works" style="text-decoration: none; color: inherit;">Works</a>
-            </h1>
+    <div class="work-detail">
+
+        <h1 class="work-detail-title">
+            信号機の中のぴかる
+        </h1>
+
+        <div class="work-detail-meta">
+            <span>2026 / Interactive Art</span>
+        </div>
+
+        <div class="work-detail-catch">
+            <p class="work-detail-text">
+                押しボタン信号機の中に暮らす人の物語を体験する作品。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="work-gallery">
+
+        <div class="photo-one">
+            <img src="./img/kesi1.jpeg">
+        </div>
+
+        <div class="photo-two">
+            <img src="./img/kesi2.jpeg">
+            <img src="./img/kesi3.PNG">
+        </div>
+
+        <div class="photo-one">
+            <img src="./img/kesi4.jpg">
+        </div>
+        <div class="youtube-short">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_5kuWHZ9T58" title="消し太郎＆消し子"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="work-text">
+        <section class="work-section">
+            <h2>Tools & Technologies</h2>
+            <p>
+                Arduino,RFIDリーダ,ロードセル,TFTディスプレイ
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Overview</h2>
+            <p>
+                消しゴムを消すことで物語が進行する．消しゴムは新品の状態があかちゃんで，使用していくにつれて年をとっていく．消しゴムを使用し，写真立て型デバイスに
+                乗せることで，デバイスにそのときの消しゴムの物語が画像として表示される．また，消しゴムは2つ用意されており，2匹の消しゴムの物語を観ることができる．2匹の消しゴムには
+                関係性があり，2つの物語を観ることで，初めて物語の全体を理解することができる．また，物語を説明する絵本を用意しており，体験者の物語理解を助ける．
+            </p>
+        </section>
+        <section class="work-section">
+            <p>
+                この作品はナラティブインタラクションという自身が提唱するインタラクションの概念の検証のため，卒業研究で制作された．
+                ナラティブインタラクションは，人と物のインタラクションを通じて，物に物語を与えるものである．
+                ナラティブインタラクションは，2つのインタラクション手法を包括する概念である．<br />
+                1つ目：物語を伝えるためのインタラクション<br />
+                2つ目：インタラクションそのものに物語性を与える<br />
+                この作品は1つ目のインタラクション手法に基づいて制作された．
+                <br />この作品は，オープンキャンパスや，多摩センターで展示を行なった．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Implementation</h2>
+            <p>
+                消しゴムの重さと，カバーに貼り付けてあるNFCタグにより，どの物語を表示するのか判定を行う．使用度合いの判定はロードセルを用いており，カバーの判定にはRFIDを用いて実装を行なった．
+                Arduino
+                NanoでロードセルとRFIDリーダから値を取得し，取得した値をESP32にUART通信を用いて送信する．その値を元にSDカードに保存された写真から適した写真をTFTディスプレイに表示する．
+                <br />物語用の画像は手作りで制作しており，実際の消しゴムの大きさで写真撮影を行なった．服や小物は，画用紙や3Dプリンタを用いて制作した．
+                また，デバイスの外観はレーザーカッターを用いてMDFで制作した．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Award</h2>
+            <p>
+                <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank" rel="noopener"
+                    class="yellow-link">
+                    明星大学 情報学部卒研展2024 教職員賞
+                </a></br>
+                <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
+                    class="yellow-link">
+                    NICOGRAPH2025 NICOGTAPH賞
+                </a>
+            </p>
+        </section>
 
-    <div id="about" class="container-fluid mt-6">
-        <div class="row">
-            <div class="col-12-md-6">
-                <h1 class="text-top">消し太郎&消し子</h1>
 
-            </div>
-            <div class="col-md-6">
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 5"></button> -->
-
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/kesi1.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/kesi2.jpeg" class="d-block w-100" alt="葉っぱの写真">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/kesi3.PNG" class="d-block w-100" alt="IRカメラの写真">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/kesi4.jpg" class="d-block w-100" alt="IRカメラの写真">
-                        </div>
-                        <!-- <div class="carousel-item">
-                        <video class="d-block w-100" controls>
-                        <source src="video/imomushi.mp4" type="video/mp4">
-                        </video>
-                      </div> -->
-                        <!-- <div class="carousel-item"> -->
-                        <!-- <div class="ratio ratio-16x9">
-    <iframe
-      class="d-block w-100"
-      src="https://youtube.com/shorts/_5kuWHZ9T58?feature=share"
-      title="YouTube video"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div> -->
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <dl class="text-mid">
-                    <div class="row">
-                        <dt class="col-4"><a href="https://youtube.com/shorts/_5kuWHZ9T58?feature=share" target="_blank"
-                                rel="noopener" class="yellow-link">
-                                youtubeリンク
-                            </a></dt>
-                    </div>
-                    <div class="row">
-                        <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">Arduino,RFIDリーダ,ロードセル,TFTディスプレイ</dd>
-                    </div>
-                    <div class="row">
-                        <dt class="col-4">制作年月</dt>
-                        <dd class="col-8">2024年7-10月</dd>
-                    </div>
-                    <p class="text mt-4">この作品はナラティブインタラクションという自身が提唱するインタラクションの概念の検証のため，卒業研究で制作された．
-                        ナラティブインタラクションは，人と物のインタラクションを通じて，物に物語を与えるものである．
-                        ナラティブインタラクションは，2つのインタラクション手法を包括する概念である．<br />
-                        1つ目：物語を伝えるためのインタラクション<br />
-                        2つ目：インタラクションそのものに物語性を与える<br />
-                        この作品は1つ目のインタラクション手法に基づいて制作された．
-                        <br />この作品は，オープンキャンパスや，多摩センターで展示を行なった．
-                    </p>
-                    <dt class="col-4">作品概要</dt>
-                    <dd class="col-12">消しゴムを消すことで物語が進行する．消しゴムは新品の状態があかちゃんで，使用していくにつれて年をとっていく．消しゴムを使用し，写真立て型デバイスに
-                        乗せることで，デバイスにそのときの消しゴムの物語が画像として表示される．また，消しゴムは2つ用意されており，2匹の消しゴムの物語を観ることができる．2匹の消しゴムには
-                        関係性があり，2つの物語を観ることで，初めて物語の全体を理解することができる．また，物語を説明する絵本を用意しており，体験者の物語理解を助ける．
-                    </dd>
-                    <dt class="col-4">実装方法</dt>
-                    <dd class="col-12">
-                        消しゴムの重さと，カバーに貼り付けてあるNFCタグにより，どの物語を表示するのか判定を行う．使用度合いの判定はロードセルを用いており，カバーの判定にはRFIDを用いて実装を行なった．<br />
-                        Arduino
-                        NanoでロードセルとRFIDリーダから値を取得し，取得した値をESP32にUART通信を用いて送信する．その値を元にSDカードに保存された写真から適した写真をTFTディスプレイに表示する．
-                        <br />物語用の画像は手作りで制作しており，実際の消しゴムの大きさで写真撮影を行なった．服や小物は，画用紙や3Dプリンタを用いて制作した．<br />
-                        また，デバイスの外観はレーザーカッターを用いてMDFで制作した．
-                    </dd>
-
-                    <dt class="col-4">受賞</dt>
-                    <p class="col-12 mb-1">
-                        <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank" rel="noopener"
-                            class="yellow-link">
-                            明星大学 情報学部卒研展2024 教職員賞
-                        </a></br>
-                        <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
-                            class="yellow-link">
-                            NICOGRAPH2025 NICOGTAPH賞
-                        </a>
-                    </p>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="col-md-6">
-                <img src="img/Rimomushi.png" class="img-fluid">
-            </div>
-
-            <div class="col-md-6">
-                <dl class="text-mid">
-                    <div class="row">
-                        <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">Processing,IRカメラ,IRLED</dd>
-                    </div>
-                    <p class="text mt-4">三年生後期の授業で作ったものです。</p>
-                </dl>
-            </div> -->
-    </div>
-    </div>
-    <div id="contact" class="container-fluid mt-5">
-        <div class="black-background">
-            <dl class="row">
-                <div class="col">
-                    <dt>Email</dt>
-                    <dd>m.kishino0921@gmail.com</dd>
-                </div>
-            </dl>
-        </div>
-    </div>
+        <footer class="fotter-line"></footer>
+        <footer class="site-footer">
+            © 2026 Manami Kishino
+        </footer>
 
 
 
@@ -244,11 +192,11 @@
 
 
 
-    <!-- offcanvasをリンク押したら閉じるように -->
-    <script src="./assets/bootstrap.bundle.min.js"></script>
-    <script src="./assets/script.js"></script>
+        <!-- offcanvasをリンク押したら閉じるように -->
+        <script src="./assets/bootstrap.bundle.min.js"></script>
+        <script src="./assets/script.js"></script>
 
-    <!-- End Example Code -->
+        <!-- End Example Code -->
 </body>
 
 </html>

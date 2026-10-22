@@ -121,23 +121,68 @@
         <div class="photo-one">
             <img src="./img/kesi4.jpg">
         </div>
-        <div class="youtube">
-            <iframe src="https://www.youtube.com/embed/_5kuWHZ9T58" title="消し太郎＆消し子" frameborder="0"
+        <div class="youtube-short">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_5kuWHZ9T58" title="消し太郎＆消し子"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
-    <div id="contact" class="container-fluid mt-5">
-        <div class="black-background">
-            <dl class="row">
-                <div class="col">
-                    <dt>Email</dt>
-                    <dd>m.kishino0921@gmail.com</dd>
-                </div>
-            </dl>
-        </div>
-    </div>
+    <div class="work-text">
+        <section class="work-section">
+            <h2>Tools & Technologies</h2>
+            <p>
+                Arduino,RFIDリーダ,ロードセル,TFTディスプレイ
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Overview</h2>
+            <p>
+                消しゴムを消すことで物語が進行する．消しゴムは新品の状態があかちゃんで，使用していくにつれて年をとっていく．消しゴムを使用し，写真立て型デバイスに
+                乗せることで，デバイスにそのときの消しゴムの物語が画像として表示される．また，消しゴムは2つ用意されており，2匹の消しゴムの物語を観ることができる．2匹の消しゴムには
+                関係性があり，2つの物語を観ることで，初めて物語の全体を理解することができる．また，物語を説明する絵本を用意しており，体験者の物語理解を助ける．
+            </p>
+        </section>
+        <section class="work-section">
+            <p>
+                この作品はナラティブインタラクションという自身が提唱するインタラクションの概念の検証のため，卒業研究で制作された．
+                ナラティブインタラクションは，人と物のインタラクションを通じて，物に物語を与えるものである．
+                ナラティブインタラクションは，2つのインタラクション手法を包括する概念である．<br />
+                1つ目：物語を伝えるためのインタラクション<br />
+                2つ目：インタラクションそのものに物語性を与える<br />
+                この作品は1つ目のインタラクション手法に基づいて制作された．
+                <br />この作品は，オープンキャンパスや，多摩センターで展示を行なった．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Implementation</h2>
+            <p>
+                消しゴムの重さと，カバーに貼り付けてあるNFCタグにより，どの物語を表示するのか判定を行う．使用度合いの判定はロードセルを用いており，カバーの判定にはRFIDを用いて実装を行なった．
+                Arduino
+                NanoでロードセルとRFIDリーダから値を取得し，取得した値をESP32にUART通信を用いて送信する．その値を元にSDカードに保存された写真から適した写真をTFTディスプレイに表示する．
+                <br />物語用の画像は手作りで制作しており，実際の消しゴムの大きさで写真撮影を行なった．服や小物は，画用紙や3Dプリンタを用いて制作した．
+                また，デバイスの外観はレーザーカッターを用いてMDFで制作した．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Award</h2>
+            <p>
+                <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank" rel="noopener"
+                    class="yellow-link">
+                    明星大学 情報学部卒研展2024 教職員賞
+                </a></br>
+                <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
+                    class="yellow-link">
+                    NICOGRAPH2025 NICOGTAPH賞
+                </a>
+            </p>
+        </section>
+
+
+        <footer class="fotter-line"></footer>
+        <footer class="site-footer">
+            © 2026 Manami Kishino
+        </footer>
 
 
 
@@ -147,11 +192,11 @@
 
 
 
-    <!-- offcanvasをリンク押したら閉じるように -->
-    <script src="./assets/bootstrap.bundle.min.js"></script>
-    <script src="./assets/script.js"></script>
+        <!-- offcanvasをリンク押したら閉じるように -->
+        <script src="./assets/bootstrap.bundle.min.js"></script>
+        <script src="./assets/script.js"></script>
 
-    <!-- End Example Code -->
+        <!-- End Example Code -->
 </body>
 
 </html>
