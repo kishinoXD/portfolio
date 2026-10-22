@@ -580,13 +580,14 @@ body * {
 }
 
 .work-section {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .work-section h2 {
     font-size: 1.2rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 8px;
+    
 }
 
 .work-section p {

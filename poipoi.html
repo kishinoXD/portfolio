@@ -28,7 +28,7 @@
 
 </head>
 
-<!-- 変更箇所 -->
+<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
 
 <body class="p-3">
 
@@ -83,143 +83,108 @@
         </div>
 
     </div>
-    <!-- 変更箇所 -->
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/W_LEXcudME0?si=uFRjMuLt0JOjUxQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <div id="canvas-parent" class="text-start">
-        <div class="overray px-4 py-5">
-            
-            <!-- text-decoration: none;は下の線を表示しないようにする color: inherit;は文字色をbodyとかの背景に合わせる -->
-            <h1 class="display-1"><a href="index.html#works" style="text-decoration: none; color: inherit;">Works</a>
-            </h1>
-        </div>
+
+    <div class="fixed-nav">
+        <a href="index.html#home">Home / </a>
+        <a href="index.html#works">Works</a>
     </div>
 
-    <div id="about" class="container-fluid mt-6">
-        <div class="row">
-            <div class="col-12-md-6">
-                <h1 class="text-top">ぽいぽいふぇありー</h1>
+    <div class="work-detail">
 
-            </div>
-            <div class="col-md-6">
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+        <h1 class="work-detail-title">
+            ぽいぽいふぇありー
+        </h1>
 
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/poipoi1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/poipo5.jpg" class="d-block w-100" alt="葉っぱの写真">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/poipoi2.JPG" class="d-block w-100" alt="IRカメラの写真">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/poipoi3.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/poipoi4.jpeg" class="d-block w-100" alt="IRカメラの写真">
-                        </div>
+        <div class="work-detail-meta">
+            <span>2025- / Interactive Art</span>
+        </div>
 
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+        <div class="work-detail-catch">
+            <p class="work-detail-text">
+                ゴミ分別を学べるインタラクティブ作品．
+            </p>
+        </div>
 
-            <div class="col-md-6">
-                <dl class="text-mid">
-                    <div class="row">
-                        <dt class="col-4"><a href="https://youtu.be/W_LEXcudME0?si=X12LL1IozNNSIq9A" target="_blank"
-                                rel="noopener" class="yellow-link">
-                                動作動画
-                            </a><br /><a href="https://youtu.be/Pm9Dl2cnszs?si=E4M6vRslAsb5M45i" target="_blank"
-                                rel="noopener" class="yellow-link">
-                                画面動画
-                            </a>
-                        </dt>
-                    </div>
-                    <div class="row">
-                        <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">Processing,Arduino,RFID,サーボモーター</dd>
-                    </div>
-                    <div class="row">
-                        <dt class="col-4">制作年月</dt>
-                        <dd class="col-8">2025年7月頃</dd>
-                    </div>
-                    <p class="text mt-4">
-                        この作品は，ゴミ分別の社会課題を解決するために3人グループで制作を行いました．この作品は，オープンキャンパスで展示を行いました．私は，実装，アイデアだし，デバイスの側づくりを行いました．
-                    </p>
-                    <dt class="col-4">作品概要</dt>
-                    <dd class="col-12">
-                        本作品は，楽しみながら正しいゴミ分別を学ぶことができるインタラクティブシステムです．八王子市の基準に基づく６つの分別区分を用意し，ユーザーは100種類のゴミイラストが描かれたキューブを手に取ります．ゴミ箱の前には各分別区分の世界に入ってよいか判断する番人妖精が立っており，ユーザーがゴミキューブを番人妖精の手に載せると，選択したゴミが正しいか判定します．正解の場合は番人妖精がゴミ箱に投入し，誤っている場合は返却します．
-                        本作品の特徴は「ゴミにはそれぞれの分別区分の妖精の魂が宿っている」という物語設定にあります．ゴミ箱の内部には妖精生成場が存在し，ゴミから魂が抽出され妖精として生まれ変わります．生成された妖精はリサイクル場へと移動し，リサイクル先の姿へ変化します．この一連の過程はアニメーションとして表現され，ゴミがどのように循環し生まれ変わるのかを視覚的に体験できるようにしました．
-                        本作品は，単に分別の正誤を知らせるだけでなく，分別行動の意味を物語として提示することで，ユーザーの自律的な分別意識を育むことを目的としている．
-                    </dd>
-                    <dt class="col-4">実装方法</dt>
-                    <dd class="col-12">
-                        番人妖精の手にはRFIDリーダが付いています．ゴミキューブの下にはNFCタグが貼り付けてあります．ゴミキューブを番人妖精の手に乗せるとArduinoで情報を取得し，その情報を元に分別が合っている場合はゴミ箱側にサーボモータを動かし，誤っている場合は体験者側にモータを動かします．
+    </div>
+
+    <div class="work-gallery">
+
+        <div class="photo-one">
+            <img src="./img/poipoi1.jpg">
+        </div>
+
+        <div class="photo-two">
+            <img src="./img/poipoi2.JPG">
+            <img src="./img/poipoi3.jpeg">
+        </div>
+        <div class="photo-two">
+            <img src="./img/poipoi8.JPG">
+            <img src="./img/poipoi7.jpg">
+        </div>
+
+        <div class="youtube-movie">
+            <iframe src="https://www.youtube.com/embed/W_LEXcudME0?si=e0BiWDvtTvYkr57R" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="photo-two">
+            <img src="./img/poipo5.jpg">
+            <img src="./img/poipoi4.jpeg">
+        </div>
+        <div class="youtube-movie">
+            <iframe src="https://www.youtube.com/embed/Pm9Dl2cnszs?si=KEYAR_abpOKQkrxQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="work-text">
+        <section class="work-section">
+            <h2>Tools & Technologies</h2>
+            <p>
+                Processing,Arduino,RFID,サーボモーター
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Overview</h2>
+            <p>
+                本作品は，楽しみながら正しいゴミ分別を学ぶことができるインタラクティブシステムです．八王子市の基準に基づく６つの分別区分を用意し，ユーザーは100種類のゴミイラストが描かれたキューブを手に取ります．ゴミ箱の前には各分別区分の世界に入ってよいか判断する番人妖精が立っており，ユーザーがゴミキューブを番人妖精の手に載せると，選択したゴミが正しいか判定します．正解の場合は番人妖精がゴミ箱に投入し，誤っている場合は返却します．
+                本作品の特徴は「ゴミにはそれぞれの分別区分の妖精の魂が宿っている」という物語設定にあります．ゴミ箱の内部には妖精生成場が存在し，ゴミから魂が抽出され妖精として生まれ変わります．生成された妖精はリサイクル場へと移動し，リサイクル先の姿へ変化します．この一連の過程はアニメーションとして表現され，ゴミがどのように循環し生まれ変わるのかを視覚的に体験できるようにしました．
+                本作品は，単に分別の正誤を知らせるだけでなく，分別行動の意味を物語として提示することで，ユーザーの自律的な分別意識を育むことを目的としている．
+            </p>
+        </section>
+        <section class="work-section">
+            <p>
+                この作品は，ゴミ分別の社会課題を解決するために3人グループで制作を行いました．この作品は，オープンキャンパスで展示を行いました．私は，実装，アイデアだし，デバイスの側づくりを行いました．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Implementation</h2>
+            <p>
+                番人妖精の手にはRFIDリーダが付いています．ゴミキューブの下にはNFCタグが貼り付けてあります．ゴミキューブを番人妖精の手に乗せるとArduinoで情報を取得し，その情報を元に分別が合っている場合はゴミ箱側にサーボモータを動かし，誤っている場合は体験者側にモータを動かします．
                         正解した場合は，Processingとシリアル通信を行い，Processingでアニメーションを再生します．
-                    </dd>
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Award</h2>
+            <p>
+                <a>
+                    かわいい感性デザイン賞2026 優秀賞
+                </a></br>
+                <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
+                    class="yellow-link">
+                    NICOGRAPH2025 ポスター賞
+                </a>
+            </p>
+        </section>
+    </div>
 
-                    <dt class="col-4">受賞</dt>
-                    <p class="col-12 mb-1">
-                        <!-- <a href="https://www.is.meisei-u.ac.jp/thesis/project/852" target="_blank"> -->
-                        かわいい感性デザイン賞2026 優秀賞
-                        </a></br>
-                        <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
-                            class="yellow-link">
-                            NICOGRAPH2025 ポスター賞
-                        </a>
-                    </p>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="col-md-6">
-                <img src="img/Rimomushi.png" class="img-fluid">
-            </div>
 
-            <div class="col-md-6">
-                <dl class="text-mid">
-                    <div class="row">
-                        <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">Processing,IRカメラ,IRLED</dd>
-                    </div>
-                    <p class="text mt-4">三年生後期の授業で作ったものです。</p>
-                </dl>
-            </div> -->
-    </div>
-    </div>
-    <div id="contact" class="container-fluid mt-5">
-        <div class="black-background">
-            <dl class="row">
-                <div class="col">
-                    <dt>Email</dt>
-                    <dd>m.kishino0921@gmail.com</dd>
-                </div>
-            </dl>
-        </div>
-    </div>
+    <footer class="fotter-line"></footer>
+    <footer class="site-footer">
+        © 2026 Manami Kishino
+    </footer>
 
 
 
