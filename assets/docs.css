@@ -599,7 +599,7 @@ body * {
 .youtube-short {
     position: relative;
 
-    width: 33.333%;
+    width: 40%;
     aspect-ratio: 9 / 16;
 
     margin: 0 auto 20px;

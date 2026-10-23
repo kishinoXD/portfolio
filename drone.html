@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="./assets/css/docs.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="assets/docs.css">
-    <title>kishino's portfolio</title>
+    <link rel="stylesheet" href="./assets/docs.css">
+
+    <link rel="icon" href="./img/ikon.PNG" type="image/png">
+    <title>身体を使ったドローン操作 - Manami Kishino</title>
 
     <style>
         html,
@@ -28,7 +30,7 @@
 
 </head>
 
-<!-- 変更箇所 -->
+<!-- <body class="p-3 m-0 border-0 bd-example m-0 border-0"> -->
 
 <body class="p-3">
 
@@ -83,90 +85,64 @@
         </div>
 
     </div>
-    <!-- 変更箇所 -->
 
-    <div id="canvas-parent" class="text-start">
-        <div class="overray px-4 py-5">
-            <!-- text-decoration: none;は下の線を表示しないようにする color: inherit;は文字色をbodyとかの背景に合わせる -->
-            <h1 class="display-1"><a href="index.html#works" style="text-decoration: none; color: inherit;">Works</a>
-            </h1>
-        </div>
+    <div class="fixed-nav">
+        <a href="index.html#home">Home / </a>
+        <a href="index.html#works">Works</a>
     </div>
 
-    <div id="about" class="container-fluid mt-6">
-        <div class="row">
-            <div class="col-12-md-6">
-                <h1 class="text-top">身体を使ったドローン操作</h1>
+    <div class="work-detail">
 
-            </div>
-            <div class="col-md-6">
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+        <h1 class="work-detail-title">
+            身体を使ったドローン操作
+        </h1>
 
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/Rdrone.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/drone_gamen.jpg" class="d-block w-100" alt="操作画面">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/dorone2.jpg" class="d-block w-100" alt="ドローンKinect">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <dl class="text-mid">
-                    <div class="row">
-                        <dt class="col-4">使用技術</dt>
-                        <dd class="col-8">Processing,Kinect,Tello SDK</dd>
-                    </div>
-                    <div class="row">
-                        <dt class="col-4">制作年月</dt>
-                        <dd class="col-8">2023年7月頃</dd>
-                    </div>
-                    <p class="text mt-4">この作品はインタラクティブシステム1という授業で新しいドローン操作の提案という課題でチームで作成しました。
-                        私たちのチームはKinectという身体の動きによってコンピュータの操作ができるデバイスを用いたドローン操作の提案をしました。</p>
-                    <dt class="col-4">作品概要</dt>
-                    <dd class="col-12">手の位置を取得して、手の位置が各ボタンの位置に来たらボタンが押されます。
-                        そうするとドローンが対応した動きをします。
-
-                    </dd>
-                    <dt class="col-4">実装方法</dt>
-                    <dd class="col-12">Tello SDKを用いて、PCとドローンを繋ぎ、ProcessingでKinectライブラリを用いて処理をし、ドローンを制御します。</dd>
-                </dl>
-            </div>
+        <div class="work-detail-meta">
+            <span>2023 / Drone</span>
         </div>
+
     </div>
-    <div id="contact" class="container-fluid mt-5">
-        <div class="black-background">
-            <dl class="row">
-                <div class="col">
-                    <dt>Email</dt>
-                    <dd>m.kishino0921@gmail.com</dd>
-                </div>
-            </dl>
+
+    <div class="work-gallery">
+
+        <div class="photo-one">
+            <img src="./img/Rdrone.png">
         </div>
+        <div class="photo-one">
+            <img src="./img/drone_gamen.jpg">
+        </div>
+        <div class="photo-one">
+            <img src="./img/dorone2.jpg">
+        </div>
+
     </div>
+    <div class="work-text">
+        <section class="work-section">
+            <h2>Tools & Technologies</h2>
+            <p>
+                Processing,Arduino,加速度センサ
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Overview</h2>
+            <p>
+                この作品は，インタラクティブシステム1という儒教で新しいドローン操作の提案という課題でチームで制作を行なった．私たちのチームは，身体の動作を用いたドローン操作の提案を行なった．
+                手で画面に映るボタンを押し，するとドローンがボタンに対応した動きをする．指でドローンを操作するのではなく，体を動かして操作できるようなシステムである．
+            </p>
+        </section>
+        <section class="work-section">
+            <h2>Implementation</h2>
+            <p>
+                Tello SDKを用いて，PCでドローンに操作命令を送れるようにした．Processingを用いて，Kinectを動かし手の位置を取得する．手の位置が各ボタンの位置に重なったらボタンが押され，押したボタンに基づきドローンが対応した動きを行う．
+            </p>
+        </section>
+    </div>
+
+
+    <footer class="fotter-line"></footer>
+    <footer class="site-footer">
+        © 2026 Manami Kishino
+    </footer>
 
 
 
@@ -179,6 +155,7 @@
     <!-- offcanvasをリンク押したら閉じるように -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
     <script src="./assets/script.js"></script>
+
     <!-- End Example Code -->
 </body>
 

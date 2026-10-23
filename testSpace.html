@@ -10,7 +10,9 @@
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="./assets/css/docs.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./assets/docs.css">
-    <title>kishino's portfolio</title>
+
+    <link rel="icon" href="./img/ikon.PNG" type="image/png">
+    <title>スツール - Manami Kishino</title>
 
     <style>
         html,
@@ -92,17 +94,11 @@
     <div class="work-detail">
 
         <h1 class="work-detail-title">
-            ぽいぽいふぇありー
+            スツール
         </h1>
 
         <div class="work-detail-meta">
-            <span>2025- / Interactive Art</span>
-        </div>
-
-        <div class="work-detail-catch">
-            <p class="work-detail-text">
-                ゴミ分別を学べるインタラクティブ作品．
-            </p>
+            <span>2023 / ShopBot</span>
         </div>
 
     </div>
@@ -110,72 +106,36 @@
     <div class="work-gallery">
 
         <div class="photo-one">
-            <img src="./img/poipoi1.jpg">
+            <img src="./img/isu_4.jpg">
+        </div>
+        <div class="photo-two">
+            <img src="./img/isu_5.jpg">
+            <img src="./img/isu_3.jpg">
+        </div>
+        <div class="photo-two">
+            <img src="./img/isu_1.jpg">
+            <img src="./img/isu_2.jpg">
         </div>
 
-        <div class="photo-two">
-            <img src="./img/poipoi2.JPG">
-            <img src="./img/poipoi3.jpeg">
-        </div>
-        <div class="photo-two">
-            <img src="./img/poipoi8.JPG">
-            <img src="./img/poipoi7.jpg">
-        </div>
-
-        <div class="youtube-movie">
-            <iframe src="https://www.youtube.com/embed/W_LEXcudME0?si=e0BiWDvtTvYkr57R" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="photo-two">
-            <img src="./img/poipo5.jpg">
-            <img src="./img/poipoi4.jpeg">
-        </div>
-        <div class="youtube-movie">
-            <iframe src="https://www.youtube.com/embed/Pm9Dl2cnszs?si=KEYAR_abpOKQkrxQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
     </div>
     <div class="work-text">
         <section class="work-section">
-            <h2>Tools & Technologies</h2>
+            <h2>Tools</h2>
             <p>
-                Processing,Arduino,RFID,サーボモーター
+                ShopBot
+            </p>
+        </section>
+        <section class="work-section">
+            <p>
+                この作品は，情報学部，デザイン学部，人文学部福祉実践学科，建築学部の学部横断で行われたワークショップの際に制作した作品である．
+                大学に必要なスツールを制作するというお題で，情報学部1人，デザイン学部1人，人文学部1人，建築学部3人のチームで制作を行なった．
             </p>
         </section>
         <section class="work-section">
             <h2>Overview</h2>
             <p>
-                本作品は，楽しみながら正しいゴミ分別を学ぶことができるインタラクティブシステムです．八王子市の基準に基づく６つの分別区分を用意し，ユーザーは100種類のゴミイラストが描かれたキューブを手に取ります．ゴミ箱の前には各分別区分の世界に入ってよいか判断する番人妖精が立っており，ユーザーがゴミキューブを番人妖精の手に載せると，選択したゴミが正しいか判定します．正解の場合は番人妖精がゴミ箱に投入し，誤っている場合は返却します．
-                本作品の特徴は「ゴミにはそれぞれの分別区分の妖精の魂が宿っている」という物語設定にあります．ゴミ箱の内部には妖精生成場が存在し，ゴミから魂が抽出され妖精として生まれ変わります．生成された妖精はリサイクル場へと移動し，リサイクル先の姿へ変化します．この一連の過程はアニメーションとして表現され，ゴミがどのように循環し生まれ変わるのかを視覚的に体験できるようにしました．
-                本作品は，単に分別の正誤を知らせるだけでなく，分別行動の意味を物語として提示することで，ユーザーの自律的な分別意識を育むことを目的としている．
-            </p>
-        </section>
-        <section class="work-section">
-            <p>
-                この作品は，ゴミ分別の社会課題を解決するために3人グループで制作を行いました．この作品は，オープンキャンパスで展示を行いました．私は，実装，アイデアだし，デバイスの側づくりを行いました．
-            </p>
-        </section>
-        <section class="work-section">
-            <h2>Implementation</h2>
-            <p>
-                番人妖精の手にはRFIDリーダが付いています．ゴミキューブの下にはNFCタグが貼り付けてあります．ゴミキューブを番人妖精の手に乗せるとArduinoで情報を取得し，その情報を元に分別が合っている場合はゴミ箱側にサーボモータを動かし，誤っている場合は体験者側にモータを動かします．
-                        正解した場合は，Processingとシリアル通信を行い，Processingでアニメーションを再生します．
-            </p>
-        </section>
-        <section class="work-section">
-            <h2>Award</h2>
-            <p>
-                <a>
-                    かわいい感性デザイン賞2026 優秀賞
-                </a></br>
-                <a href="https://www.art-science.org/nicograph/nico2025/" target="_blank" rel="noopener"
-                    class="yellow-link">
-                    NICOGRAPH2025 ポスター賞
-                </a>
+                私のチームは，講義室の前で講義が終わるのを待っている人たちに着目した．大学生はパソコンなど思い荷物を持っているため，リュックサックを背負っていることが多い．
+                普通の椅子では，リュックサックを前に抱えなおさないと座れなく，面倒で座るのをやめてしまう．そこで，講義の前の少しの時間だけ使用することを考え，リュックを背負ったまま，少しだけ腰をかけられ，すぐに立ち上がれるようなスツールを制作した．
             </p>
         </section>
     </div>
